@@ -9,10 +9,19 @@ body {
 
 p {
     text-align: center;
-    color: white;
 }
 
 button {
+    background-color: whitesmoke;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+}
+
+.counter-buttons {
     height: 55px;
     width: 55px;
     font-size: 35px;
@@ -35,6 +44,7 @@ button {
 
 #counter {
     font-size: 40px;
+    color: white;
 }
 
 #decrement {
@@ -50,4 +60,8 @@ button {
 #increment {
     background-color: #46FF33;
     color: white;
+}
+
+#input-container {
+    margin-top: 20px;
 }

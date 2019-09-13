@@ -8,17 +8,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <span id="username"></span>
+    <p id="username"></p>
     <section id="counter-container">
         <p id="counter"></p>
         <div>
-            <button id="decrement" onclick="decrementCount()">-</button>
-            <button id="clear" onclick="resetCount()">C</button>
-            <button id="increment" onclick="incrementCount()">+</button>
+            <button id="decrement" class="counter-buttons" onclick="decrementCount()">-</button>
+            <button id="clear" class="counter-buttons" onclick="resetCount()">C</button>
+            <button id="increment" class="counter-buttons" onclick="incrementCount()">+</button>
         </div>
     </section>
-    <input type="text" id="nameInput" />
-    <input type="submit" onclick="changeUsername()"/>
+    <section id="input-container">
+        Enter Your Name 
+        <input type="text" id="nameInput" />
+        <button onclick="changeUsername()">Submit</button>
+    </section>
 </body>
 <script src="index.js"></script>
 </html>
