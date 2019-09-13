@@ -8,10 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <p id="counter"></p>
-    <button onclick="decrementCount()">Count Down!</button>
-    <button onclick="incrementCount()">Count Up!</button>
-    <button onclick="resetCount()">Reset</button>
+    <section id="counter-container">
+        <p id="counter"></p>
+        <div>
+            <button onclick="decrementCount()">Count Down!</button>
+            <button onclick="resetCount()">Reset</button>
+            <button onclick="incrementCount()">Count Up!</button>
+        </div>
+    </section>
 </body>
 <script src="index.js"></script>
 </html>
