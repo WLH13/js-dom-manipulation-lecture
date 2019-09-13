@@ -8,14 +8,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <span id="username"></span>
     <section id="counter-container">
         <p id="counter"></p>
         <div>
-            <button onclick="decrementCount()">Count Down!</button>
-            <button onclick="resetCount()">Reset</button>
-            <button onclick="incrementCount()">Count Up!</button>
+            <button id="decrement" onclick="decrementCount()">-</button>
+            <button id="clear" onclick="resetCount()">C</button>
+            <button id="increment" onclick="incrementCount()">+</button>
         </div>
     </section>
+    <input type="text" id="nameInput" />
+    <input type="submit" onclick="changeUsername()"/>
 </body>
 <script src="index.js"></script>
 </html>

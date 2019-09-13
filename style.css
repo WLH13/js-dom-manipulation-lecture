@@ -1,25 +1,53 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 p {
     text-align: center;
-    font-size: 25px;
+    color: white;
 }
 
 button {
-    height: 25px;
+    height: 55px;
+    width: 55px;
+    font-size: 35px;
+    border-radius: 50%;
+    border: none;
 }
 
 #counter-container {
-    height: 150px;
-    width: 250px;    
+    height: 275px;
+    width: 300px;    
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #353535;
+}
+
+#counter {
+    font-size: 40px;
+}
+
+#decrement {
+    background-color: #FF3333;
+    color: white;
+}
+
+#clear {
+    background-color: #D3D3D3;
+    color: white;
+}
+
+#increment {
+    background-color: #46FF33;
+    color: white;
 }
