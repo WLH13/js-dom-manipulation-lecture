@@ -59,9 +59,9 @@ function resetCount(){
 //The resetCount function reassigns the count variable to 0, and changes color of the 
 //counter elements text to white, and reassigns the counter element back to 0.
 
+let userName = document.getElementById('username')
 
 function changeUsername(){
-    const userName = document.getElementById('username')
     let nameInput = document.getElementById('nameInput');
     if(nameInput.value){
         userName.innerHTML = `${nameInput.value}'s Counter`;
@@ -75,3 +75,19 @@ function changeUsername(){
 //giving it a value), it will then set the userName elements innerHTML to that value, 
 //and reset the input to be empty. If nothing is typed into the input, a window alert 
 //pops up, prompting the user to type in their name.
+
+let background = document.querySelector('body');
+let sectionText = document.getElementById('input-container');
+let themeButton = document.getElementById('theme-button');
+
+function themeChange(){
+    background.classList.toggle('dark-theme-body');
+    userName.classList.toggle('dark-theme-username');
+    sectionText.classList.toggle('dark-theme-input-container');
+    nameInput.classList.toggle('dark-theme-input');
+    if(themeButton.innerText === 'Dark Mode'){
+        themeButton.innerText = 'Light Mode';
+    } else {
+        themeButton.innerText = 'Dark Mode'
+    }
+}

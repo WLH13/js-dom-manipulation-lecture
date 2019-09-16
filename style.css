@@ -9,6 +9,7 @@ body {
 
 p {
     text-align: center;
+    font-size: 20px;
 }
 
 button {
@@ -21,12 +22,37 @@ input {
     background-color: whitesmoke;
 }
 
+.dark-theme-body {
+    background-color: #1E1E1E;
+}
+
+.dark-theme-username {
+    color: white;
+}
+
 .counter-buttons {
     height: 55px;
     width: 55px;
     font-size: 35px;
     border-radius: 50%;
     border: none;
+}
+
+.dark-theme-input-container {
+    color: white;
+}
+
+.dark-theme-input {
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+#theme-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
 }
 
 #counter-container {
